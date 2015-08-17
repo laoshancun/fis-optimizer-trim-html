@@ -1,0 +1,22 @@
+{
+  "name": "fis-optimizer-trim-html",
+  "description": "A optimizer for fis to compress html.",
+  "version": "0.0.1",
+  "author": {
+    "name": "laoshancun",
+    "email": "laoshancun@foxmail.com"
+  },
+  "homepage": "",
+  "keywords": [
+    "fis",
+	"trimhtml"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laoshancun/fis-optimizer-trim-html.git"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
