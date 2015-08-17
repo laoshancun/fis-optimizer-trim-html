@@ -13,5 +13,6 @@ FIS内置
 ```javascript
 fis.match('**.html', {
         optimizer: fis.plugin('trim-html')
-    })```
+    })
+```
 
