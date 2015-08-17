@@ -5,14 +5,13 @@
 'use strict';
 
 function trimHtml(content, file, conf) {
-    conf.fromString = true;
-    var rep = /[\n\r]+/g;
-    var repone = /<!--.*?-->/ig;
-    var reptree = />\s+</ig;
+    var rMerge = /[\n\r]+/g;
+    var rComment = /<!--.*?-->/ig;
+    var rTrim = />\s+</ig;
     return content
-        .replace(rep, "")
-        .replace(repone, "")
-        .replace(reptree, "><");
+        .replace(rMerge, "")
+        .replace(rComment, "")
+        .replace(rTrim, "><");
 }
 
 module.exports = function (content, file, conf) {
