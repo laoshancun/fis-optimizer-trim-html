@@ -4,7 +4,7 @@ A optimizer for fis to compress html.
 
 ## 使用
 
-FIS内置
+npm install -g fis-optimizer-trim-html
 
 ## 配置
 
