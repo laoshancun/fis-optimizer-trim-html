@@ -6,12 +6,12 @@
 
 function trimHtml(content, file, conf) {
     var rMerge = /[\n\r]+/g;
-    var rComment = /<!--.*?-->/ig;
-    var rTrim = />\s+</ig;
+    var rComment = /<!--.*?-->/g;
+    var rTrim = /\s+</g;
     return content
         .replace(rMerge, "")
         .replace(rComment, "")
-        .replace(rTrim, "><");
+        .replace(rTrim, "<");
 }
 
 module.exports = function (content, file, conf) {
